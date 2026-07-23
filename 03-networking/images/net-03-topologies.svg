@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" width="960" height="640" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans Bengali, Nirmala UI, sans-serif">
+  <defs>
+    <g id="pc">
+      <rect x="-15" y="-13" width="30" height="19" rx="3"/>
+      <rect x="-4" y="6" width="8" height="4"/>
+      <rect x="-11" y="10" width="22" height="2.6" rx="1.3"/>
+    </g>
+    <g id="sw">
+      <rect x="-19" y="-11" width="38" height="22" rx="4"/>
+      <circle cx="-9" cy="0" r="2"/>
+      <circle cx="0" cy="0" r="2"/>
+      <circle cx="9" cy="0" r="2"/>
+    </g>
+  </defs>
+
+  <rect width="960" height="640" fill="#0B1020"/>
+
+  <text x="32" y="38" fill="#8B97B0" font-size="12" letter-spacing="2.5">03 &#160;/&#160; NETWORK TOPOLOGIES</text>
+  <line x1="32" y1="52" x2="928" y2="52" stroke="#253049" stroke-width="1"/>
+  <text x="32" y="80" fill="#E6EAF3" font-size="17" font-weight="600">How the machines are arranged</text>
+
+  <!-- ============ ROW 1 ============ -->
+
+  <!-- Point to Point -->
+  <rect x="32" y="100" width="212" height="200" rx="10" fill="#151B2E" stroke="#2E3B57"/>
+  <g stroke="#64748B" stroke-width="1.6" fill="#0B1020">
+    <use href="#pc" x="90" y="180"/>
+    <use href="#pc" x="186" y="180"/>
+  </g>
+  <line x1="112" y1="180" x2="164" y2="180" stroke="#64748B" stroke-width="1.6"/>
+  <text x="138" y="238" fill="#E6EAF3" font-size="14" font-weight="600" text-anchor="middle">Point to Point</text>
+  <text x="138" y="260" fill="#8B97B0" font-size="11.5" text-anchor="middle">Two machines, one link</text>
+  <text x="138" y="280" fill="#8B97B0" font-size="11.5" text-anchor="middle">Simplest possible setup</text>
+
+  <!-- Bus -->
+  <rect x="260" y="100" width="212" height="200" rx="10" fill="#151B2E" stroke="#2E3B57"/>
+  <line x1="290" y1="180" x2="442" y2="180" stroke="#FB7185" stroke-width="2.4"/>
+  <g stroke="#64748B" stroke-width="1.6" fill="#0B1020">
+    <use href="#pc" x="316" y="146"/>
+    <use href="#pc" x="416" y="146"/>
+    <use href="#pc" x="366" y="214"/>
+  </g>
+  <line x1="316" y1="160" x2="316" y2="180" stroke="#64748B" stroke-width="1.4"/>
+  <line x1="416" y1="160" x2="416" y2="180" stroke="#64748B" stroke-width="1.4"/>
+  <line x1="366" y1="180" x2="366" y2="202" stroke="#64748B" stroke-width="1.4"/>
+  <text x="366" y="256" fill="#E6EAF3" font-size="14" font-weight="600" text-anchor="middle">Bus</text>
+  <text x="366" y="278" fill="#FB7185" font-size="11.5" text-anchor="middle">One cable cut = everyone down</text>
+
+  <!-- Ring -->
+  <rect x="488" y="100" width="212" height="200" rx="10" fill="#151B2E" stroke="#2E3B57"/>
+  <circle cx="594" cy="180" r="52" fill="none" stroke="#A78BFA" stroke-width="2"/>
+  <g stroke="#64748B" stroke-width="1.6" fill="#0B1020">
+    <use href="#pc" x="594" y="128"/>
+    <use href="#pc" x="646" y="180"/>
+    <use href="#pc" x="594" y="232"/>
+    <use href="#pc" x="542" y="180"/>
+  </g>
+  <text x="594" y="270" fill="#E6EAF3" font-size="14" font-weight="600" text-anchor="middle">Ring</text>
+  <text x="594" y="290" fill="#8B97B0" font-size="11.5" text-anchor="middle">Data travels in one loop</text>
+
+  <!-- Star (highlighted) -->
+  <rect x="716" y="100" width="212" height="200" rx="10" fill="#0E2733" stroke="#22D3EE" stroke-width="2"/>
+  <rect x="716" y="100" width="212" height="24" rx="10" fill="#22D3EE" opacity="0.14"/>
+  <text x="822" y="117" fill="#67E8F9" font-size="10.5" letter-spacing="1.6" text-anchor="middle">TODAY&#8217;S FIRST CHOICE</text>
+  <line x1="822" y1="188" x2="762" y2="150" stroke="#22D3EE" stroke-width="1.4"/>
+  <line x1="822" y1="188" x2="882" y2="150" stroke="#22D3EE" stroke-width="1.4"/>
+  <line x1="822" y1="188" x2="762" y2="228" stroke="#22D3EE" stroke-width="1.4"/>
+  <line x1="822" y1="188" x2="882" y2="228" stroke="#22D3EE" stroke-width="1.4"/>
+  <g stroke="#64748B" stroke-width="1.6" fill="#0B1020">
+    <use href="#pc" x="762" y="146"/>
+    <use href="#pc" x="882" y="146"/>
+    <use href="#pc" x="762" y="228"/>
+    <use href="#pc" x="882" y="228"/>
+  </g>
+  <g stroke="#22D3EE" stroke-width="1.8" fill="#0E2733">
+    <use href="#sw" x="822" y="188"/>
+  </g>
+  <text x="822" y="272" fill="#E6EAF3" font-size="14" font-weight="600" text-anchor="middle">Star</text>
+  <text x="822" y="292" fill="#67E8F9" font-size="11.5" text-anchor="middle">One machine dies, the rest keep going</text>
+
+  <!-- ============ ROW 2 ============ -->
+
+  <!-- Tree -->
+  <rect x="32" y="318" width="212" height="200" rx="10" fill="#151B2E" stroke="#2E3B57"/>
+  <line x1="72" y1="396" x2="204" y2="396" stroke="#34D399" stroke-width="2"/>
+  <g stroke="#64748B" stroke-width="1.6" fill="#0B1020">
+    <use href="#pc" x="100" y="366"/>
+    <use href="#pc" x="176" y="366"/>
+    <use href="#pc" x="76" y="432"/>
+    <use href="#pc" x="138" y="432"/>
+    <use href="#pc" x="200" y="432"/>
+  </g>
+  <line x1="100" y1="380" x2="100" y2="396" stroke="#64748B" stroke-width="1.4"/>
+  <line x1="176" y1="380" x2="176" y2="396" stroke="#64748B" stroke-width="1.4"/>
+  <line x1="76" y1="396" x2="76" y2="420" stroke="#64748B" stroke-width="1.4"/>
+  <line x1="138" y1="396" x2="138" y2="420" stroke="#64748B" stroke-width="1.4"/>
+  <line x1="200" y1="396" x2="200" y2="420" stroke="#64748B" stroke-width="1.4"/>
+  <text x="138" y="478" fill="#E6EAF3" font-size="14" font-weight="600" text-anchor="middle">Tree</text>
+  <text x="138" y="498" fill="#8B97B0" font-size="11.5" text-anchor="middle">Stars stacked in levels</text>
+
+  <!-- Mesh -->
+  <rect x="260" y="318" width="212" height="200" rx="10" fill="#151B2E" stroke="#2E3B57"/>
+  <g stroke="#FBBF24" stroke-width="1.2" opacity="0.75">
+    <line x1="316" y1="366" x2="416" y2="366"/>
+    <line x1="316" y1="366" x2="316" y2="438"/>
+    <line x1="316" y1="366" x2="416" y2="438"/>
+    <line x1="416" y1="366" x2="316" y2="438"/>
+    <line x1="416" y1="366" x2="416" y2="438"/>
+    <line x1="316" y1="438" x2="416" y2="438"/>
+  </g>
+  <g stroke="#64748B" stroke-width="1.6" fill="#0B1020">
+    <use href="#pc" x="316" y="366"/>
+    <use href="#pc" x="416" y="366"/>
+    <use href="#pc" x="316" y="438"/>
+    <use href="#pc" x="416" y="438"/>
+  </g>
+  <text x="366" y="478" fill="#E6EAF3" font-size="14" font-weight="600" text-anchor="middle">Mesh</text>
+  <text x="366" y="498" fill="#FBBF24" font-size="11.5" text-anchor="middle">Most reliable, most expensive</text>
+
+  <!-- Hybrid -->
+  <rect x="488" y="318" width="440" height="200" rx="10" fill="#151B2E" stroke="#A78BFA" stroke-width="1.6"/>
+  <rect x="488" y="318" width="440" height="24" rx="10" fill="#A78BFA" opacity="0.12"/>
+  <text x="708" y="335" fill="#C4B5FD" font-size="10.5" letter-spacing="1.6" text-anchor="middle">WHEN THE BUDGET ALLOWS</text>
+
+  <line x1="558" y1="400" x2="620" y2="400" stroke="#64748B" stroke-width="1.6"/>
+  <g stroke="#64748B" stroke-width="1.6" fill="#0B1020">
+    <use href="#pc" x="536" y="400"/>
+    <use href="#pc" x="642" y="400"/>
+  </g>
+  <line x1="664" y1="400" x2="720" y2="424" stroke="#A78BFA" stroke-width="1.4" stroke-dasharray="4 3"/>
+
+  <line x1="782" y1="424" x2="722" y2="380" stroke="#22D3EE" stroke-width="1.4"/>
+  <line x1="782" y1="424" x2="856" y2="380" stroke="#22D3EE" stroke-width="1.4"/>
+  <line x1="782" y1="424" x2="722" y2="468" stroke="#22D3EE" stroke-width="1.4"/>
+  <line x1="782" y1="424" x2="856" y2="468" stroke="#22D3EE" stroke-width="1.4"/>
+  <g stroke="#64748B" stroke-width="1.6" fill="#0B1020">
+    <use href="#pc" x="722" y="376"/>
+    <use href="#pc" x="856" y="376"/>
+    <use href="#pc" x="722" y="468"/>
+    <use href="#pc" x="856" y="468"/>
+  </g>
+  <g stroke="#22D3EE" stroke-width="1.8" fill="#0E2733">
+    <use href="#sw" x="782" y="424"/>
+  </g>
+  <text x="708" y="502" fill="#E6EAF3" font-size="14" font-weight="600" text-anchor="middle">Hybrid&#160;&#160;·&#160;&#160;two or more shapes joined</text>
+
+  <!-- footer note -->
+  <rect x="32" y="536" width="896" height="76" rx="9" fill="#151B2E" stroke="#2E3B57"/>
+  <text x="52" y="560" fill="#8B97B0" font-size="11" letter-spacing="2">IN PRACTICE</text>
+  <text x="52" y="583" fill="#B7C0D4" font-size="13">বাসা ও অফিসের WiFi আসলে <tspan fill="#67E8F9" font-weight="600">Star</tspan> — সস্তা, বসানো সহজ, আর একটা device নষ্ট হলেও বাকিরা দিব্যি চলে।</text>
+  <text x="52" y="602" fill="#B7C0D4" font-size="13">বড় প্রতিষ্ঠান ও data center-এ <tspan fill="#C4B5FD" font-weight="600">Hybrid</tspan> — যাতে একটা রাস্তা বন্ধ হলেও বিকল্প রাস্তা খোলা থাকে।</text>
+</svg>

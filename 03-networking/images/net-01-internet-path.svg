@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 690" width="960" height="690" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans Bengali, Nirmala UI, sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8B97B0"/>
+    </marker>
+    <marker id="arc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#22D3EE"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="690" fill="#0B1020"/>
+
+  <text x="32" y="38" fill="#8B97B0" font-size="12" letter-spacing="2.5">01 &#160;/&#160; PATH OF A REQUEST</text>
+  <line x1="32" y1="52" x2="928" y2="52" stroke="#253049" stroke-width="1"/>
+
+  <!-- Internet -->
+  <rect x="360" y="76" width="240" height="52" rx="10" fill="#0F2A22" stroke="#34D399" stroke-width="1.5"/>
+  <text x="480" y="108" fill="#6EE7B7" font-size="19" font-weight="600" text-anchor="middle">Internet</text>
+  <line x1="480" y1="128" x2="480" y2="164" stroke="#8B97B0" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- ISP -->
+  <rect x="360" y="166" width="240" height="64" rx="10" fill="#1B1735" stroke="#A78BFA" stroke-width="1.5"/>
+  <text x="480" y="192" fill="#C4B5FD" font-size="18" font-weight="600" text-anchor="middle">ISP</text>
+  <text x="480" y="214" fill="#8B97B0" font-size="11.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">Link3 · BDCOM · GP · Amber IT</text>
+  <line x1="480" y1="230" x2="480" y2="266" stroke="#8B97B0" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- Modem -->
+  <rect x="340" y="268" width="280" height="68" rx="10" fill="#0E2733" stroke="#22D3EE" stroke-width="2"/>
+  <text x="480" y="296" fill="#67E8F9" font-size="17" font-weight="600" text-anchor="middle">Modem / Router</text>
+  <text x="480" y="320" fill="#E6EAF3" font-size="12.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace"><tspan fill="#8B97B0">public IP&#160;&#160;</tspan>103.108.44.7</text>
+
+  <!-- left callout NAT -->
+  <rect x="32" y="252" width="278" height="100" rx="9" fill="#151B2E" stroke="#FBBF24" stroke-width="1.2"/>
+  <text x="50" y="277" fill="#FBBF24" font-size="12.5" font-weight="600">NAT · Network Address Translation</text>
+  <text x="50" y="299" fill="#B7C0D4" font-size="12">Remembers which device asked, so the</text>
+  <text x="50" y="316" fill="#B7C0D4" font-size="12">reply comes back to the right one.</text>
+  <text x="50" y="338" fill="#8B97B0" font-size="11.5">private IP &#8596; public IP</text>
+  <line x1="310" y1="302" x2="336" y2="302" stroke="#FBBF24" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+  <!-- right callout DHCP -->
+  <rect x="650" y="252" width="278" height="100" rx="9" fill="#151B2E" stroke="#34D399" stroke-width="1.2"/>
+  <text x="668" y="277" fill="#34D399" font-size="12.5" font-weight="600">DHCP · hands out private IPs</text>
+  <text x="668" y="299" fill="#B7C0D4" font-size="12">Every device gets a changeable local</text>
+  <text x="668" y="316" fill="#B7C0D4" font-size="12">address the moment it connects.</text>
+  <text x="668" y="338" fill="#8B97B0" font-size="11.5">Dynamic Host Configuration Protocol</text>
+  <line x1="624" y1="302" x2="648" y2="302" stroke="#34D399" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+  <!-- fan out -->
+  <path d="M480 336 L480 362 L215 362 L215 392" fill="none" stroke="#8B97B0" stroke-width="1.4" marker-end="url(#ar)"/>
+  <path d="M480 336 L480 392" fill="none" stroke="#8B97B0" stroke-width="1.4" marker-end="url(#ar)"/>
+  <path d="M480 336 L480 362 L745 362 L745 392" fill="none" stroke="#8B97B0" stroke-width="1.4" marker-end="url(#ar)"/>
+
+  <!-- devices -->
+  <rect x="140" y="394" width="150" height="60" rx="9" fill="#151B2E" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="215" y="418" fill="#93C5FD" font-size="14" font-weight="600" text-anchor="middle">Device 1</text>
+  <text x="215" y="438" fill="#8B97B0" font-size="11.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">192.168.0.11</text>
+
+  <rect x="405" y="394" width="150" height="60" rx="9" fill="#151B2E" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="480" y="418" fill="#93C5FD" font-size="14" font-weight="600" text-anchor="middle">Device 2</text>
+  <text x="480" y="438" fill="#8B97B0" font-size="11.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">192.168.0.12</text>
+
+  <rect x="670" y="394" width="150" height="60" rx="9" fill="#151B2E" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="745" y="418" fill="#93C5FD" font-size="14" font-weight="600" text-anchor="middle">Device 3</text>
+  <text x="745" y="438" fill="#8B97B0" font-size="11.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">192.168.0.13</text>
+
+  <line x1="215" y1="454" x2="215" y2="490" stroke="#22D3EE" stroke-width="1.6" marker-end="url(#arc)"/>
+
+  <!-- port panel -->
+  <rect x="60" y="492" width="520" height="126" rx="10" fill="#0E2733" stroke="#22D3EE" stroke-width="1.5"/>
+  <text x="82" y="518" fill="#67E8F9" font-size="13" font-weight="600">Inside Device 1 — which application?</text>
+
+  <rect x="82" y="532" width="146" height="64" rx="8" fill="#151B2E" stroke="#2E3B57"/>
+  <text x="155" y="557" fill="#E6EAF3" font-size="13.5" text-anchor="middle">WhatsApp</text>
+  <text x="155" y="579" fill="#67E8F9" font-size="13" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">:443</text>
+
+  <rect x="240" y="532" width="146" height="64" rx="8" fill="#151B2E" stroke="#2E3B57"/>
+  <text x="313" y="557" fill="#E6EAF3" font-size="13.5" text-anchor="middle">MySQL</text>
+  <text x="313" y="579" fill="#67E8F9" font-size="13" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">:3306</text>
+
+  <rect x="398" y="532" width="146" height="64" rx="8" fill="#151B2E" stroke="#2E3B57"/>
+  <text x="471" y="557" fill="#E6EAF3" font-size="13.5" text-anchor="middle">Browser</text>
+  <text x="471" y="579" fill="#67E8F9" font-size="13" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">:80</text>
+
+  <!-- summary -->
+  <rect x="606" y="492" width="322" height="126" rx="10" fill="#151B2E" stroke="#2E3B57"/>
+  <text x="628" y="522" fill="#8B97B0" font-size="11" letter-spacing="2">REMEMBER</text>
+  <text x="628" y="552" fill="#93C5FD" font-size="14.5" font-weight="600">IP&#160;&#160;&#8594;&#160;&#160;which device</text>
+  <text x="628" y="582" fill="#67E8F9" font-size="14.5" font-weight="600">PORT&#160;&#160;&#8594;&#160;&#160;which application</text>
+  <text x="628" y="604" fill="#8B97B0" font-size="11.5">Building address, then flat number.</text>
+
+  <text x="480" y="660" fill="#8B97B0" font-size="13" text-anchor="middle">ISP &#8594; Modem/Router &#8594; Device &#8594; Application — এভাবেই request গন্তব্যে পৌঁছায়</text>
+</svg>

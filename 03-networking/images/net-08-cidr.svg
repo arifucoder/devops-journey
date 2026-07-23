@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans Bengali, Nirmala UI, sans-serif">
+  <rect width="960" height="560" fill="#0B1020"/>
+
+  <text x="32" y="38" fill="#8B97B0" font-size="12" letter-spacing="2.5">08 &#160;/&#160; CIDR NOTATION</text>
+  <line x1="32" y1="52" x2="928" y2="52" stroke="#253049" stroke-width="1"/>
+  <text x="32" y="80" fill="#E6EAF3" font-size="17" font-weight="600">The number after the slash counts network bits</text>
+
+  <!-- the address -->
+  <text x="480" y="128" fill="#E6EAF3" font-size="30" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">10.88.135.144<tspan fill="#F472B6">/28</tspan></text>
+
+  <!-- octet labels -->
+  <text x="160" y="168" fill="#8B97B0" font-size="12.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">10</text>
+  <text x="373" y="168" fill="#8B97B0" font-size="12.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">88</text>
+  <text x="586" y="168" fill="#8B97B0" font-size="12.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">135</text>
+  <text x="799" y="168" fill="#8B97B0" font-size="12.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">144</text>
+
+  <!-- ===== bits: octet 1 = 00001010 (all network) ===== -->
+  <g fill="#0F2A22" stroke="#34D399" stroke-width="1.2">
+    <rect x="61" y="180" width="24" height="34" rx="4"/><rect x="86" y="180" width="24" height="34" rx="4"/>
+    <rect x="111" y="180" width="24" height="34" rx="4"/><rect x="136" y="180" width="24" height="34" rx="4"/>
+    <rect x="161" y="180" width="24" height="34" rx="4"/><rect x="186" y="180" width="24" height="34" rx="4"/>
+    <rect x="211" y="180" width="24" height="34" rx="4"/><rect x="236" y="180" width="24" height="34" rx="4"/>
+  </g>
+  <g fill="#6EE7B7" font-size="13" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">
+    <text x="73" y="203">0</text><text x="98" y="203">0</text><text x="123" y="203">0</text><text x="148" y="203">0</text>
+    <text x="173" y="203">1</text><text x="198" y="203">0</text><text x="223" y="203">1</text><text x="248" y="203">0</text>
+  </g>
+
+  <!-- octet 2 = 01011000 (all network) -->
+  <g fill="#0F2A22" stroke="#34D399" stroke-width="1.2">
+    <rect x="274" y="180" width="24" height="34" rx="4"/><rect x="299" y="180" width="24" height="34" rx="4"/>
+    <rect x="324" y="180" width="24" height="34" rx="4"/><rect x="349" y="180" width="24" height="34" rx="4"/>
+    <rect x="374" y="180" width="24" height="34" rx="4"/><rect x="399" y="180" width="24" height="34" rx="4"/>
+    <rect x="424" y="180" width="24" height="34" rx="4"/><rect x="449" y="180" width="24" height="34" rx="4"/>
+  </g>
+  <g fill="#6EE7B7" font-size="13" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">
+    <text x="286" y="203">0</text><text x="311" y="203">1</text><text x="336" y="203">0</text><text x="361" y="203">1</text>
+    <text x="386" y="203">1</text><text x="411" y="203">0</text><text x="436" y="203">0</text><text x="461" y="203">0</text>
+  </g>
+
+  <!-- octet 3 = 10000111 (all network) -->
+  <g fill="#0F2A22" stroke="#34D399" stroke-width="1.2">
+    <rect x="487" y="180" width="24" height="34" rx="4"/><rect x="512" y="180" width="24" height="34" rx="4"/>
+    <rect x="537" y="180" width="24" height="34" rx="4"/><rect x="562" y="180" width="24" height="34" rx="4"/>
+    <rect x="587" y="180" width="24" height="34" rx="4"/><rect x="612" y="180" width="24" height="34" rx="4"/>
+    <rect x="637" y="180" width="24" height="34" rx="4"/><rect x="662" y="180" width="24" height="34" rx="4"/>
+  </g>
+  <g fill="#6EE7B7" font-size="13" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">
+    <text x="499" y="203">1</text><text x="524" y="203">0</text><text x="549" y="203">0</text><text x="574" y="203">0</text>
+    <text x="599" y="203">0</text><text x="624" y="203">1</text><text x="649" y="203">1</text><text x="674" y="203">1</text>
+  </g>
+
+  <!-- octet 4 = 1001 | 0000  -> first 4 network, last 4 host -->
+  <g fill="#0F2A22" stroke="#34D399" stroke-width="1.2">
+    <rect x="700" y="180" width="24" height="34" rx="4"/><rect x="725" y="180" width="24" height="34" rx="4"/>
+    <rect x="750" y="180" width="24" height="34" rx="4"/><rect x="775" y="180" width="24" height="34" rx="4"/>
+  </g>
+  <g fill="#6EE7B7" font-size="13" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">
+    <text x="712" y="203">1</text><text x="737" y="203">0</text><text x="762" y="203">0</text><text x="787" y="203">1</text>
+  </g>
+  <g fill="#2A2110" stroke="#FBBF24" stroke-width="1.4">
+    <rect x="800" y="180" width="24" height="34" rx="4"/><rect x="825" y="180" width="24" height="34" rx="4"/>
+    <rect x="850" y="180" width="24" height="34" rx="4"/><rect x="875" y="180" width="24" height="34" rx="4"/>
+  </g>
+  <g fill="#FBBF24" font-size="13" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">
+    <text x="812" y="203">0</text><text x="837" y="203">0</text><text x="862" y="203">0</text><text x="887" y="203">0</text>
+  </g>
+
+  <!-- split line -->
+  <line x1="798" y1="172" x2="798" y2="252" stroke="#F472B6" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="798" y="166" fill="#F472B6" font-size="11" text-anchor="middle">bit 28</text>
+
+  <!-- brackets -->
+  <path d="M61 226 L61 236 L790 236 L790 226" fill="none" stroke="#34D399" stroke-width="1.2"/>
+  <text x="425" y="256" fill="#34D399" font-size="13" text-anchor="middle" font-weight="600">28 network bits — which neighbourhood</text>
+  <path d="M806 226 L806 236 L899 236 L899 226" fill="none" stroke="#FBBF24" stroke-width="1.2"/>
+  <text x="852" y="256" fill="#FBBF24" font-size="13" text-anchor="middle" font-weight="600">4 host bits</text>
+
+  <!-- maths -->
+  <rect x="32" y="284" width="436" height="150" rx="10" fill="#151B2E" stroke="#2E3B57"/>
+  <text x="54" y="310" fill="#8B97B0" font-size="10.5" letter-spacing="1.6">THE MATHS</text>
+  <text x="54" y="340" fill="#B7C0D4" font-size="13.5" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">host bits &#160;= 32 &#8722; 28 &#160;= <tspan fill="#FBBF24">4</tspan></text>
+  <text x="54" y="366" fill="#B7C0D4" font-size="13.5" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">total IPs &#160;= 2&#8308; &#160;&#160;&#160;&#160;&#160;&#160;= <tspan fill="#E6EAF3">16</tspan></text>
+  <text x="54" y="392" fill="#B7C0D4" font-size="13.5" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">usable &#160;&#160;&#160;= 16 &#8722; 2 &#160;&#160;= <tspan fill="#22D3EE">14</tspan></text>
+  <text x="54" y="418" fill="#8B97B0" font-size="12">দুটো বাদ যায় — প্রথমটা Network, শেষেরটা Broadcast।</text>
+
+  <!-- results -->
+  <rect x="492" y="284" width="436" height="150" rx="10" fill="#151B2E" stroke="#2E3B57"/>
+  <text x="514" y="310" fill="#8B97B0" font-size="10.5" letter-spacing="1.6">WHAT YOU GET</text>
+  <text x="514" y="332" fill="#8B97B0" font-size="12">Netmask</text>
+  <text x="906" y="332" fill="#E6EAF3" font-size="13" text-anchor="end" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">255.255.255.240</text>
+  <text x="514" y="354" fill="#8B97B0" font-size="12">Network address</text>
+  <text x="906" y="354" fill="#94A3B8" font-size="13" text-anchor="end" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">10.88.135.144</text>
+  <text x="514" y="376" fill="#8B97B0" font-size="12">First usable</text>
+  <text x="906" y="376" fill="#22D3EE" font-size="13" text-anchor="end" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">10.88.135.145</text>
+  <text x="514" y="398" fill="#8B97B0" font-size="12">Last usable</text>
+  <text x="906" y="398" fill="#22D3EE" font-size="13" text-anchor="end" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">10.88.135.158</text>
+  <text x="514" y="420" fill="#8B97B0" font-size="12">Broadcast address</text>
+  <text x="906" y="420" fill="#94A3B8" font-size="13" text-anchor="end" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">10.88.135.159</text>
+
+  <!-- quick chart -->
+  <text x="32" y="468" fill="#8B97B0" font-size="10.5" letter-spacing="1.6">QUICK REFERENCE</text>
+  <line x1="32" y1="478" x2="928" y2="478" stroke="#253049"/>
+  <g font-size="13" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">
+    <text x="60" y="504" fill="#F472B6">/30</text><text x="130" y="504" fill="#8B97B0">4 IPs · 2 usable</text><text x="300" y="504" fill="#B7C0D4" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12.5">link between two routers</text>
+    <text x="60" y="528" fill="#F472B6">/28</text><text x="130" y="528" fill="#8B97B0">16 IPs · 14 usable</text><text x="300" y="528" fill="#B7C0D4" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12.5">a small subnet</text>
+    <text x="540" y="504" fill="#F472B6">/24</text><text x="610" y="504" fill="#8B97B0">256 IPs · 254 usable</text><text x="800" y="504" fill="#B7C0D4" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12.5">home or office</text>
+    <text x="540" y="528" fill="#F472B6">/16</text><text x="610" y="528" fill="#8B97B0">65,536 IPs</text><text x="800" y="528" fill="#B7C0D4" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12.5">a large company</text>
+  </g>
+</svg>

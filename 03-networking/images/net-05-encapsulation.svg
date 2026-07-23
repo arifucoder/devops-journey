@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 660" width="1000" height="660" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans Bengali, Nirmala UI, sans-serif">
+  <defs>
+    <marker id="d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#FB7185"/>
+    </marker>
+    <marker id="u" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#34D399"/>
+    </marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8B97B0"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="660" fill="#0B1020"/>
+
+  <text x="32" y="38" fill="#8B97B0" font-size="12" letter-spacing="2.5">05 &#160;/&#160; HOW ONE MESSAGE TRAVELS — 10 STEPS</text>
+  <line x1="32" y1="52" x2="968" y2="52" stroke="#253049" stroke-width="1"/>
+
+  <!-- device A -->
+  <rect x="32" y="70" width="212" height="54" rx="9" fill="#151B2E" stroke="#FB7185" stroke-width="1.5"/>
+  <text x="138" y="94" fill="#FB7185" font-size="14.5" font-weight="600" text-anchor="middle">Device A</text>
+  <text x="138" y="113" fill="#8B97B0" font-size="11.5" text-anchor="middle">you type a WhatsApp message</text>
+
+  <!-- internet -->
+  <ellipse cx="500" cy="97" rx="76" ry="27" fill="#0F2A22" stroke="#34D399" stroke-width="1.4"/>
+  <text x="500" y="102" fill="#6EE7B7" font-size="14" font-weight="600" text-anchor="middle">Internet</text>
+
+  <line x1="248" y1="97" x2="418" y2="97" stroke="#8B97B0" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#g)"/>
+  <line x1="580" y1="97" x2="752" y2="97" stroke="#8B97B0" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#g)"/>
+
+  <!-- device B -->
+  <rect x="756" y="70" width="212" height="54" rx="9" fill="#151B2E" stroke="#34D399" stroke-width="1.5"/>
+  <text x="862" y="94" fill="#6EE7B7" font-size="14.5" font-weight="600" text-anchor="middle">Device B</text>
+  <text x="862" y="113" fill="#8B97B0" font-size="11.5" text-anchor="middle">the message appears on screen</text>
+
+  <!-- column headers -->
+  <text x="32" y="152" fill="#FB7185" font-size="11" letter-spacing="1.8">GOING DOWN &#160;·&#160; ENCAPSULATION</text>
+  <text x="500" y="152" fill="#8B97B0" font-size="11" letter-spacing="1.8" text-anchor="middle">WHAT THE DATA LOOKS LIKE</text>
+  <text x="968" y="152" fill="#34D399" font-size="11" letter-spacing="1.8" text-anchor="end">GOING UP &#160;·&#160; DE-ENCAPSULATION</text>
+
+  <!-- spines -->
+  <line x1="308" y1="168" x2="308" y2="462" stroke="#FB7185" stroke-width="1.3" stroke-dasharray="4 4" marker-end="url(#d)"/>
+  <line x1="692" y1="462" x2="692" y2="168" stroke="#34D399" stroke-width="1.3" stroke-dasharray="4 4" marker-end="url(#u)"/>
+
+  <!-- ================= ROW 1 : Data ================= -->
+  <text x="32" y="182" fill="#FB7185" font-size="15" font-weight="700" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">1</text>
+  <text x="52" y="182" fill="#E6EAF3" font-size="13" font-weight="600">Application · Presentation · Session</text>
+  <text x="52" y="200" fill="#8B97B0" font-size="12">App takes your text, encrypts it,</text>
+  <text x="52" y="216" fill="#8B97B0" font-size="12">opens the session, adds HTTP header.</text>
+
+  <rect x="326" y="168" width="68" height="42" rx="6" fill="#2A1520" stroke="#FB7185" stroke-width="1.3"/>
+  <text x="360" y="194" fill="#FB7185" font-size="11.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">HTTP</text>
+  <rect x="398" y="168" width="84" height="42" rx="6" fill="#334155" stroke="#94A3B8" stroke-width="1.3"/>
+  <text x="440" y="194" fill="#E6EAF3" font-size="12" text-anchor="middle" font-weight="600">DATA</text>
+  <text x="674" y="194" fill="#8B97B0" font-size="12" text-anchor="end" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">Data</text>
+
+  <text x="968" y="182" fill="#34D399" font-size="15" font-weight="700" text-anchor="end" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">10</text>
+  <text x="942" y="182" fill="#E6EAF3" font-size="13" font-weight="600" text-anchor="end">Session · Presentation · Application</text>
+  <text x="942" y="200" fill="#8B97B0" font-size="12" text-anchor="end">Decrypted, decoded — and the message</text>
+  <text x="942" y="216" fill="#8B97B0" font-size="12" text-anchor="end">finally shows up in WhatsApp.</text>
+
+  <!-- ================= ROW 2 : Segment ================= -->
+  <text x="32" y="248" fill="#FB7185" font-size="15" font-weight="700" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">2</text>
+  <text x="52" y="248" fill="#22D3EE" font-size="13" font-weight="600">Transport</text>
+  <text x="52" y="266" fill="#8B97B0" font-size="12">Adds TCP header: source + destination</text>
+  <text x="52" y="282" fill="#8B97B0" font-size="12">port, and a serial number per piece.</text>
+
+  <rect x="326" y="234" width="60" height="42" rx="6" fill="#0E2733" stroke="#22D3EE" stroke-width="1.3"/>
+  <text x="356" y="260" fill="#22D3EE" font-size="11.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">TCP</text>
+  <rect x="390" y="234" width="68" height="42" rx="6" fill="#2A1520" stroke="#FB7185" stroke-width="1.3"/>
+  <text x="424" y="260" fill="#FB7185" font-size="11.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">HTTP</text>
+  <rect x="462" y="234" width="84" height="42" rx="6" fill="#334155" stroke="#94A3B8" stroke-width="1.3"/>
+  <text x="504" y="260" fill="#E6EAF3" font-size="12" text-anchor="middle" font-weight="600">DATA</text>
+  <text x="674" y="260" fill="#22D3EE" font-size="12" text-anchor="end" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">Segment</text>
+
+  <text x="968" y="248" fill="#34D399" font-size="15" font-weight="700" text-anchor="end" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">9</text>
+  <text x="942" y="248" fill="#22D3EE" font-size="13" font-weight="600" text-anchor="end">Transport</text>
+  <text x="942" y="266" fill="#8B97B0" font-size="12" text-anchor="end">Reorders the pieces by serial number,</text>
+  <text x="942" y="282" fill="#8B97B0" font-size="12" text-anchor="end">re-requests lost ones, reads the port.</text>
+
+  <!-- ================= ROW 3 : Packet ================= -->
+  <text x="32" y="314" fill="#FB7185" font-size="15" font-weight="700" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">3</text>
+  <text x="52" y="314" fill="#34D399" font-size="13" font-weight="600">Network</text>
+  <text x="52" y="332" fill="#8B97B0" font-size="12">Adds IP header: source + destination</text>
+  <text x="52" y="348" fill="#8B97B0" font-size="12">IP. The route is decided here.</text>
+
+  <rect x="326" y="300" width="56" height="42" rx="6" fill="#0F2A22" stroke="#34D399" stroke-width="1.3"/>
+  <text x="354" y="326" fill="#34D399" font-size="11.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">IP</text>
+  <rect x="386" y="300" width="60" height="42" rx="6" fill="#0E2733" stroke="#22D3EE" stroke-width="1.3"/>
+  <text x="416" y="326" fill="#22D3EE" font-size="11.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">TCP</text>
+  <rect x="450" y="300" width="68" height="42" rx="6" fill="#2A1520" stroke="#FB7185" stroke-width="1.3"/>
+  <text x="484" y="326" fill="#FB7185" font-size="11.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">HTTP</text>
+  <rect x="522" y="300" width="84" height="42" rx="6" fill="#334155" stroke="#94A3B8" stroke-width="1.3"/>
+  <text x="564" y="326" fill="#E6EAF3" font-size="12" text-anchor="middle" font-weight="600">DATA</text>
+  <text x="674" y="326" fill="#34D399" font-size="12" text-anchor="end" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">Packet</text>
+
+  <text x="968" y="314" fill="#34D399" font-size="15" font-weight="700" text-anchor="end" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">8</text>
+  <text x="942" y="314" fill="#34D399" font-size="13" font-weight="600" text-anchor="end">Network</text>
+  <text x="942" y="332" fill="#8B97B0" font-size="12" text-anchor="end">&#8220;This destination IP is mine.&#8221;</text>
+  <text x="942" y="348" fill="#8B97B0" font-size="12" text-anchor="end">Strips the IP header off.</text>
+
+  <!-- ================= ROW 4 : Frame ================= -->
+  <text x="32" y="380" fill="#FB7185" font-size="15" font-weight="700" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">4</text>
+  <text x="52" y="380" fill="#FBBF24" font-size="13" font-weight="600">Data Link</text>
+  <text x="52" y="398" fill="#8B97B0" font-size="12">Adds MAC header — the address of the</text>
+  <text x="52" y="414" fill="#8B97B0" font-size="12">very next machine (your router).</text>
+
+  <rect x="326" y="366" width="60" height="42" rx="6" fill="#2A2110" stroke="#FBBF24" stroke-width="1.3"/>
+  <text x="356" y="392" fill="#FBBF24" font-size="11.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">MAC</text>
+  <rect x="390" y="366" width="56" height="42" rx="6" fill="#0F2A22" stroke="#34D399" stroke-width="1.3"/>
+  <text x="418" y="392" fill="#34D399" font-size="11.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">IP</text>
+  <rect x="450" y="366" width="60" height="42" rx="6" fill="#0E2733" stroke="#22D3EE" stroke-width="1.3"/>
+  <text x="480" y="392" fill="#22D3EE" font-size="11.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">TCP</text>
+  <rect x="514" y="366" width="68" height="42" rx="6" fill="#2A1520" stroke="#FB7185" stroke-width="1.3"/>
+  <text x="548" y="392" fill="#FB7185" font-size="11.5" text-anchor="middle" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">HTTP</text>
+  <rect x="586" y="366" width="84" height="42" rx="6" fill="#334155" stroke="#94A3B8" stroke-width="1.3"/>
+  <text x="628" y="392" fill="#E6EAF3" font-size="12" text-anchor="middle" font-weight="600">DATA</text>
+
+  <text x="968" y="380" fill="#34D399" font-size="15" font-weight="700" text-anchor="end" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">7</text>
+  <text x="942" y="380" fill="#FBBF24" font-size="13" font-weight="600" text-anchor="end">Data Link</text>
+  <text x="942" y="398" fill="#8B97B0" font-size="12" text-anchor="end">&#8220;Is this frame for my MAC?&#8221; Yes &#8594;</text>
+  <text x="942" y="414" fill="#8B97B0" font-size="12" text-anchor="end">checks for errors, drops the MAC header.</text>
+
+  <!-- ================= ROW 5 : Bits ================= -->
+  <text x="32" y="446" fill="#FB7185" font-size="15" font-weight="700" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">5</text>
+  <text x="52" y="446" fill="#94A3B8" font-size="13" font-weight="600">Physical</text>
+  <text x="52" y="464" fill="#8B97B0" font-size="12">Everything becomes 0s and 1s and leaves</text>
+  <text x="52" y="480" fill="#8B97B0" font-size="12">through cable, fiber or radio.</text>
+
+  <rect x="326" y="432" width="344" height="42" rx="6" fill="#1E2536" stroke="#64748B" stroke-width="1.3"/>
+  <text x="498" y="459" fill="#94A3B8" font-size="13" text-anchor="middle" letter-spacing="2" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">1001011101001110&#8230;</text>
+
+  <text x="968" y="446" fill="#34D399" font-size="15" font-weight="700" text-anchor="end" font-family="ui-monospace, SF Mono, Menlo, Consolas, monospace">6</text>
+  <text x="942" y="446" fill="#94A3B8" font-size="13" font-weight="600" text-anchor="end">Physical</text>
+  <text x="942" y="464" fill="#8B97B0" font-size="12" text-anchor="end">The incoming signal is read back</text>
+  <text x="942" y="480" fill="#8B97B0" font-size="12" text-anchor="end">into bits.</text>
+
+  <!-- key insight -->
+  <rect x="32" y="512" width="936" height="76" rx="9" fill="#151B2E" stroke="#2E3B57"/>
+  <text x="54" y="538" fill="#8B97B0" font-size="11" letter-spacing="2">THE ONE THING TO REMEMBER</text>
+  <text x="54" y="562" fill="#B7C0D4" font-size="13.5">প্রতিটা router-এ পৌঁছে <tspan fill="#FBBF24" font-weight="600">MAC header বদলে যায়</tspan> — কারণ পরের hop আলাদা। কিন্তু <tspan fill="#34D399" font-weight="600">IP header একই থাকে</tspan> — কারণ চূড়ান্ত গন্তব্য বদলায় না।</text>
+  <text x="54" y="580" fill="#8B97B0" font-size="12.5">অর্থাৎ — ঠিকানা এক, কিন্তু বাহক বদলায়। আর পুরো ১০টা ধাপ ঘটে কয়েক millisecond-এর মধ্যে।</text>
+</svg>
