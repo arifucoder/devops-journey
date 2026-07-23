@@ -380,7 +380,7 @@ Bits গুলো router → ISP → internet → গন্তব্যের IS
 
 ## 🧩 ১০. Subnet ও Subnet Mask
 
-![Subnet ও Subnet Mask](images/net-07-subnet.svg)
+#### Subnet ও Subnet Mask
 
 **Subnet** মানে হলো — একটা বড় network-কে ভেঙে **ছোট ছোট নেটওয়ার্কে ভাগ করা**।
 
