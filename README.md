@@ -13,7 +13,8 @@ DevOps শেখার পথে আমার নিজের নোট, কম�
 | 01 | [Git](./01-git-github/) | কমান্ড, file system, permission, shell scripting |
 | 02 | [Linux](./02-linux/) | DNS, HTTP, port, firewall, load balancing |
 | 03 | [Networking](./03-networking/) | version control, branching, workflow |
-| 04 | [VPC mern deployment](./03-vpc-mern-deploy/) | vpc deployment, mern |
+| 04 | [VPC mern deployment](./04-vpc-mern-deploy/) | vpc deployment, mern |
+| 05 | [Python](./05-python/) | python, var, data types, programming |
 | 04 | [Docker](./04-docker/) | image, container, Dockerfile, Compose |
 | 05 | [Kubernetes](./05-kubernetes/) | Pod, Deployment, Service, Helm |
 | 06 | [CI/CD](./06-ci-cd/) | Jenkins, GitHub Actions, pipeline |
