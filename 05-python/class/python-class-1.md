@@ -188,8 +188,6 @@ print("Your name is {} and your age is {}".format(name, age))
 Your name is Rahim and your age is 12
 ```
 
-> ✅ **ভুল ঠিক করা হলো:** তোমার নোটে `.format()` এর quote জায়গা মতো ছিল না। সঠিক নিয়ম — লেখার string টা quote দিয়ে বন্ধ করে **তারপর** `.format(...)` লিখতে হয়:
-> `"... {} ... {}".format(value1, value2)`
 
 ---
 
