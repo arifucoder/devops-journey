@@ -68,9 +68,6 @@ Hybrid মানে — **কিছু জিনিস on-prem-এ থাকে,
 - **SaaS (Software as a Service)** — পুরো ready software, browser-এ ব্যবহার করো; কিছু manage করতে হয় না।
   *উদাহরণ:* Gmail, Microsoft 365 (আরও: Dropbox, Salesforce)
 
-> ✅ **সংশোধন — RaaS নিয়ে:**
-> তুমি IaaS/PaaS/SaaS-এর সাথে **RaaS** লিখেছিলে। কিন্তু **RaaS**-এর সবচেয়ে প্রচলিত মানে হলো **Ransomware as a Service** — এটা একটা **malicious / cybercrime** model, legitimate cloud service model নয়।
->
 > Standard cloud model মূলত তিনটা: **IaaS, PaaS, SaaS**। চতুর্থ একটা common হলো **FaaS (Function as a Service)** — *উদাহরণ:* AWS Lambda, Azure Functions। আর disaster recovery-র জন্য থাকে **DRaaS (Disaster Recovery as a Service)**।
 
 ---
@@ -83,8 +80,8 @@ AWS আমাদের তিনটা জিনিস দেয় → **Speed,
 
 - **Region** = একটা geographic area। যেমন: Singapore, Mumbai, Oregon, N. Virginia।
 
-> ✅ **গুরুত্বপূর্ণ সংশোধন:**
-> তুমি লিখেছিলে *"একটা region-এ minimum ৩টা discrete data center থাকে"*। আসল term-টা হলো **Availability Zone (AZ)**, data center না।
+> ✅ **গুরুত্বপূর্ণ:**
+>*"একটা region-এ minimum ৩টা Availability Zone (AZ) থাকে"*।
 >
 > সঠিক সম্পর্কটা এমন:
 > **Region  >  Availability Zone (AZ)  >  Data Center**
@@ -93,7 +90,7 @@ AWS আমাদের তিনটা জিনিস দেয় → **Speed,
 
 ### Availability Zone কেন isolated?
 
-AZ-গুলো **isolated / fault-tolerant** (তুমি "ifartolarance" = *fault tolerance* বলতে চেয়েছিলে ✅)।
+AZ-গুলো **isolated / fault-tolerant**।
 
 - কারণ: একটা AZ-তে যদি বন্যা/আগুন/সমস্যা হয়, বাকিগুলো ঠিক থাকবে এবং **data safe** থাকবে।
 - তাই একই application **৩টা জায়গায়** copy করে রাখা হয় (recovery-র জন্য) → AWS guarantee দিতে পারে তোমার application secure।
@@ -130,10 +127,10 @@ AZ-গুলো **isolated / fault-tolerant** (তুমি "ifartolarance" = *f
 1. **AWS Management Console** — browser-based **UI**, login করে ব্যবহার।
 
 2. **AWS CLI (Command Line Interface)** — install করে terminal থেকে command দিয়ে AWS manage করা যায়।
-   > ✅ **সংশোধন:** CLI দিয়ে তুমি পুরো **AWS account/services** access করো — শুধু "VPC-তে login" নয়।
+   > ✅ **Important:** CLI দিয়ে তুমি পুরো **AWS account/services** access করো — শুধু "VPC-তে login" নয়।
 
 3. **AWS SDK**
-   > ✅ **সংশোধন:** SDK মানে **Software Development Kit** — "key" নয়! এটা দিয়ে তোমার code (Python / JavaScript / Java ইত্যাদি) থেকে **programmatically** AWS-এর সাথে কাজ করা যায়।
+   > ✅ **Imporant:** SDK মানে **Software Development Kit** — "এটা দিয়ে তোমার code (Python / JavaScript / Java ইত্যাদি) থেকে **programmatically** AWS-এর সাথে কাজ করা যায়।
 
 ---
 
@@ -141,7 +138,7 @@ AZ-গুলো **isolated / fault-tolerant** (তুমি "ifartolarance" = *f
 
 **IAM** হলো AWS-এর **core** (এবং free) service। এটা দিয়ে ঠিক করা হয় — **কে (identity)** AWS-এর **কোন service/resource**-এ **কতটুকু** access পাবে।
 
-> ✅ **সংশোধন (তোমার "WAY / WYD" mnemonic গুছিয়ে):**
+> ✅ **("WAY / WYD" mnemonic গুছিয়ে):**
 > IAM মূলত দুটো প্রশ্নের উত্তর দেয় —
 > - **Authentication** → *Who are you?* (তুমি কে?)
 > - **Authorization** → *What can you do?* (তুমি কী করতে পারবে?)
@@ -198,17 +195,6 @@ AWS-এর **200+ service** আছে — যেমন **EC2, VPC, S3, DynamoDB,
 সব check করে **Create user** → user তৈরি হয়ে যাবে।
 
 ---
-
-## ✅ মূল সংশোধনগুলো এক নজরে
-
-1. **SDK** = Software Development **Kit** (key নয়)
-2. Region-এর ভেতরে থাকে **Availability Zone (AZ)**, minimum ৩টা; আর AZ = এক/একাধিক data center। সঠিক ক্রম: **Region > AZ > Data Center**
-3. **CLI** দিয়ে পুরো **AWS account** access হয় — শুধু VPC নয়
-4. **RaaS** সাধারণত *Ransomware-as-a-Service* (malicious) বোঝায়। Standard cloud model হলো **IaaS / PaaS / SaaS** (+ FaaS)
-5. On-prem vendor নামগুলো অস্পষ্ট ছিল — সম্ভাব্য নাম: **VMware, Dell EMC, NetApp, IBM, HPE, Cisco**
-6. **EC2 / S3 / Lambda**-এর সম্পর্ক কোনো fixed rule নয়, example architecture মাত্র
-7. IAM mnemonic: **Authentication** (Who are you) + **Authorization** (What can you do)
-
 ---
 
 *Master Class 1 — শেষ। 🎯*
