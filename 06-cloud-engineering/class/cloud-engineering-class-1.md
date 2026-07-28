@@ -195,6 +195,5 @@ AWS-এর **200+ service** আছে — যেমন **EC2, VPC, S3, DynamoDB,
 সব check করে **Create user** → user তৈরি হয়ে যাবে।
 
 ---
----
 
 *Master Class 1 — শেষ। 🎯*
