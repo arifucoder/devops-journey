@@ -11,7 +11,7 @@ Evolution of VMs → What is VM → Containers → Docker | ContainerD → Docke
 
 Container বা VM আসার আগে সব application একটাই physical machine এর উপর একসাথে চলত।
 
-![Physical Servers](images/class-1/class-1/01-physical-server.svg)
+![Physical Servers](images/class-1/01-physical-server.svg)
 
 একটা **যৌথ পরিবারের বাড়ির** সাথে তুলনা করলে বোঝা সহজ — সবাই এক ছাদের নিচে, একই hardware, একই OS, একই resource শেয়ার করে।
 
