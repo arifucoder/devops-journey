@@ -135,7 +135,7 @@ Container কে বলা যায় **একটা apartment building** — 
 
 Docker একটা **client–server** model এ চলে। CLI দিয়ে কমান্ড দিলে সেটা daemon এর কাছে যায়, daemon আসল কাজ করে।
 
-![Docker Client-Server Architecture](images/class-1/class-1/07-docker-client-server.svg)
+![Docker Client-Server Architecture](images/class-1/07-docker-client-server.svg)
 
 ### প্রধান component গুলো
 
