@@ -115,7 +115,7 @@ Container কে বলা যায় **একটা apartment building** — 
 
 ## ৬. Docker Container Architecture
 
-![Docker Container Architecture](images/class-1/class-1/05-docker-container-architecture.svg)
+![Docker Container Architecture](images/class-1/05-docker-container-architecture.svg)
 
 নিচ থেকে উপরে:
 
