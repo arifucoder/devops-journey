@@ -79,7 +79,7 @@ Container কে বলা যায় **একটা apartment building** — 
 
 দুটো পদ্ধতির তুলনা একটা analogy দিয়ে:
 
-![VM vs Containers](images/class-1/class-1/02-vm-vs-container.svg)
+![VM vs Containers](images/class-1/02-vm-vs-container.svg)
 
 **VM = বড় আলাদা বাড়ি** (ভারী, দামি, redundant) ↔ **Container = ছোট apartment** (হালকা, দ্রুত, efficient)।
 
