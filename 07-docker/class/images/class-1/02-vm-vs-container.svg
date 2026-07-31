@@ -1,0 +1,93 @@
+<svg viewBox="0 0 820 560" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, Arial, sans-serif">
+  <rect width="820" height="560" fill="#F5F6FF"/>
+  <text x="410" y="44" text-anchor="middle" font-size="29" font-weight="700" fill="#312E81">Virtual Machines vs Containers</text>
+
+  <!-- ===== LEFT: VMs ===== -->
+  <rect x="30" y="70" width="370" height="380" rx="16" fill="#FFFFFF" stroke="#818CF8" stroke-width="2"/>
+  <rect x="30" y="70" width="370" height="42" rx="16" fill="#4F46E5"/>
+  <rect x="30" y="90" width="370" height="22" fill="#4F46E5"/>
+  <text x="215" y="98" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">Virtual Machines</text>
+
+  <!-- 3 VMs -->
+  <g>
+    <rect x="52" y="128" width="100" height="110" rx="9" fill="#EEF2FF" stroke="#A5B4FC"/>
+    <rect x="62" y="140" width="80" height="34" rx="6" fill="#C7D2FE"/>
+    <text x="102" y="162" text-anchor="middle" font-size="12" font-weight="700" fill="#3730A3">App</text>
+    <rect x="62" y="180" width="80" height="48" rx="6" fill="#6366F1"/>
+    <text x="102" y="200" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Guest</text>
+    <text x="102" y="216" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">OS</text>
+  </g>
+  <g>
+    <rect x="163" y="128" width="100" height="110" rx="9" fill="#EEF2FF" stroke="#A5B4FC"/>
+    <rect x="173" y="140" width="80" height="34" rx="6" fill="#C7D2FE"/>
+    <text x="213" y="162" text-anchor="middle" font-size="12" font-weight="700" fill="#3730A3">App</text>
+    <rect x="173" y="180" width="80" height="48" rx="6" fill="#6366F1"/>
+    <text x="213" y="200" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Guest</text>
+    <text x="213" y="216" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">OS</text>
+  </g>
+  <g>
+    <rect x="274" y="128" width="100" height="110" rx="9" fill="#EEF2FF" stroke="#A5B4FC"/>
+    <rect x="284" y="140" width="80" height="34" rx="6" fill="#C7D2FE"/>
+    <text x="324" y="162" text-anchor="middle" font-size="12" font-weight="700" fill="#3730A3">App</text>
+    <rect x="284" y="180" width="80" height="48" rx="6" fill="#6366F1"/>
+    <text x="324" y="200" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Guest</text>
+    <text x="324" y="216" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">OS</text>
+  </g>
+
+  <rect x="52" y="250" width="322" height="40" rx="8" fill="#A5B4FC"/>
+  <text x="213" y="275" text-anchor="middle" font-size="14" font-weight="700" fill="#312E81">Hypervisor</text>
+  <rect x="52" y="298" width="322" height="42" rx="8" fill="#3730A3"/>
+  <text x="213" y="324" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">Host Hardware</text>
+
+  <text x="215" y="372" text-anchor="middle" font-size="13.5" font-weight="700" fill="#B91C1C">Full OS per VM</text>
+  <text x="215" y="394" text-anchor="middle" font-size="12.5" fill="#64748B">Heavy · slower · lots of resources</text>
+  <text x="215" y="414" text-anchor="middle" font-size="12.5" fill="#64748B">Boots in minutes</text>
+
+  <!-- ===== RIGHT: Containers ===== -->
+  <rect x="420" y="70" width="370" height="380" rx="16" fill="#FFFFFF" stroke="#34D399" stroke-width="2"/>
+  <rect x="420" y="70" width="370" height="42" rx="16" fill="#059669"/>
+  <rect x="420" y="90" width="370" height="22" fill="#059669"/>
+  <text x="605" y="98" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">Containers</text>
+
+  <!-- 3 containers -->
+  <g>
+    <rect x="442" y="128" width="100" height="70" rx="9" fill="#ECFDF5" stroke="#6EE7B7"/>
+    <rect x="452" y="140" width="80" height="34" rx="6" fill="#A7F3D0"/>
+    <text x="492" y="162" text-anchor="middle" font-size="12" font-weight="700" fill="#065F46">App</text>
+    <text x="492" y="190" text-anchor="middle" font-size="10" fill="#059669">+ deps</text>
+  </g>
+  <g>
+    <rect x="553" y="128" width="100" height="70" rx="9" fill="#ECFDF5" stroke="#6EE7B7"/>
+    <rect x="563" y="140" width="80" height="34" rx="6" fill="#A7F3D0"/>
+    <text x="603" y="162" text-anchor="middle" font-size="12" font-weight="700" fill="#065F46">App</text>
+    <text x="603" y="190" text-anchor="middle" font-size="10" fill="#059669">+ deps</text>
+  </g>
+  <g>
+    <rect x="664" y="128" width="100" height="70" rx="9" fill="#ECFDF5" stroke="#6EE7B7"/>
+    <rect x="674" y="140" width="80" height="34" rx="6" fill="#A7F3D0"/>
+    <text x="714" y="162" text-anchor="middle" font-size="12" font-weight="700" fill="#065F46">App</text>
+    <text x="714" y="190" text-anchor="middle" font-size="10" fill="#059669">+ deps</text>
+  </g>
+
+  <rect x="442" y="210" width="322" height="38" rx="8" fill="#6EE7B7"/>
+  <text x="603" y="234" text-anchor="middle" font-size="14" font-weight="700" fill="#065F46">Docker Engine</text>
+  <rect x="442" y="256" width="322" height="40" rx="8" fill="#10B981"/>
+  <text x="603" y="281" text-anchor="middle" font-size="13.5" font-weight="700" fill="#FFFFFF">Shared Host OS Kernel</text>
+  <rect x="442" y="304" width="322" height="36" rx="8" fill="#065F46"/>
+  <text x="603" y="327" text-anchor="middle" font-size="13.5" font-weight="700" fill="#FFFFFF">Host Hardware</text>
+
+  <text x="605" y="372" text-anchor="middle" font-size="13.5" font-weight="700" fill="#047857">Shared kernel · no extra OS</text>
+  <text x="605" y="394" text-anchor="middle" font-size="12.5" fill="#64748B">Lightweight · fast · efficient</text>
+  <text x="605" y="414" text-anchor="middle" font-size="12.5" fill="#64748B">Starts in seconds</text>
+
+  <!-- bottom compare bar -->
+  <rect x="30" y="472" width="760" height="60" rx="12" fill="#EEF2FF"/>
+  <text x="130" y="496" text-anchor="middle" font-size="13" font-weight="700" fill="#4338CA">Setup: VM=minutes</text>
+  <text x="130" y="516" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">Container=seconds</text>
+  <text x="330" y="496" text-anchor="middle" font-size="13" font-weight="700" fill="#4338CA">Cost: VM=high</text>
+  <text x="330" y="516" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">Container=low</text>
+  <text x="540" y="496" text-anchor="middle" font-size="13" font-weight="700" fill="#4338CA">Isolation: VM=strong</text>
+  <text x="540" y="516" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">Container=process</text>
+  <text x="710" y="496" text-anchor="middle" font-size="13" font-weight="700" fill="#4338CA">Size: VM=GBs</text>
+  <text x="710" y="516" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">Container=MBs</text>
+</svg>

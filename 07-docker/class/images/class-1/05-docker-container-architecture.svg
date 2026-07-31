@@ -1,0 +1,47 @@
+<svg viewBox="0 0 820 520" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, Arial, sans-serif">
+  <rect width="820" height="520" fill="#F5F6FF"/>
+  <text x="410" y="44" text-anchor="middle" font-size="29" font-weight="700" fill="#312E81">Docker Container Architecture</text>
+  <text x="410" y="70" text-anchor="middle" font-size="15" fill="#64748B">How modern containerization is layered (bottom → top)</text>
+
+  <!-- Applications -->
+  <rect x="90" y="92" width="640" height="50" rx="10" fill="#EEF2FF" stroke="#818CF8" stroke-width="1.5"/>
+  <text x="410" y="123" text-anchor="middle" font-size="16" font-weight="700" fill="#3730A3">Applications &amp; Services</text>
+
+  <!-- Containers x3 -->
+  <g>
+    <rect x="90" y="156" width="203" height="80" rx="10" fill="#A7F3D0" stroke="#10B981"/>
+    <text x="191" y="186" text-anchor="middle" font-size="15" font-weight="700" fill="#065F46">Container 1</text>
+    <text x="191" y="207" text-anchor="middle" font-size="11.5" fill="#047857">Web App</text>
+    <text x="191" y="223" text-anchor="middle" font-size="10.5" fill="#059669">App + dependencies</text>
+  </g>
+  <g>
+    <rect x="308" y="156" width="203" height="80" rx="10" fill="#A7F3D0" stroke="#10B981"/>
+    <text x="410" y="186" text-anchor="middle" font-size="15" font-weight="700" fill="#065F46">Container 2</text>
+    <text x="410" y="207" text-anchor="middle" font-size="11.5" fill="#047857">API Service</text>
+    <text x="410" y="223" text-anchor="middle" font-size="10.5" fill="#059669">App + libraries</text>
+  </g>
+  <g>
+    <rect x="526" y="156" width="204" height="80" rx="10" fill="#A7F3D0" stroke="#10B981"/>
+    <text x="628" y="186" text-anchor="middle" font-size="15" font-weight="700" fill="#065F46">Container 3</text>
+    <text x="628" y="207" text-anchor="middle" font-size="11.5" fill="#047857">Database</text>
+    <text x="628" y="223" text-anchor="middle" font-size="10.5" fill="#059669">App + dependencies</text>
+  </g>
+  <text x="410" y="252" text-anchor="middle" font-size="11.5" font-style="italic" fill="#047857">All containers share the same host OS kernel</text>
+
+  <!-- Docker Engine -->
+  <rect x="90" y="262" width="640" height="62" rx="10" fill="#2496ED"/>
+  <text x="410" y="290" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">Docker Engine</text>
+  <text x="410" y="310" text-anchor="middle" font-size="11.5" fill="#DBEAFE">Builds, runs &amp; manages containers</text>
+
+  <!-- Host OS / Shared Kernel -->
+  <rect x="90" y="338" width="640" height="56" rx="10" fill="#6366F1"/>
+  <text x="410" y="366" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">Host OS / Shared Kernel</text>
+  <text x="410" y="384" text-anchor="middle" font-size="11.5" fill="#E0E7FF">The single OS kernel used by all containers</text>
+
+  <!-- Hardware -->
+  <rect x="90" y="408" width="640" height="66" rx="10" fill="#312E81"/>
+  <text x="410" y="437" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">Physical Hardware</text>
+  <text x="410" y="458" text-anchor="middle" font-size="12" fill="#C7D2FE">CPU  ·  RAM  ·  Storage  ·  Network</text>
+
+  <text x="410" y="500" text-anchor="middle" font-size="13" font-style="italic" fill="#047857">No Guest OS per container → containers stay lightweight.</text>
+</svg>

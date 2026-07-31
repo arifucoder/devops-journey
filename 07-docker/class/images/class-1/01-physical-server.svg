@@ -1,0 +1,42 @@
+<svg viewBox="0 0 820 500" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, Arial, sans-serif">
+  <rect width="820" height="500" fill="#F5F6FF"/>
+  <text x="410" y="46" text-anchor="middle" font-size="30" font-weight="700" fill="#312E81">Physical Server</text>
+  <text x="410" y="74" text-anchor="middle" font-size="16" fill="#64748B">One machine — everything is shared (the pre-VM era)</text>
+
+  <!-- outer server box -->
+  <rect x="150" y="105" width="520" height="300" rx="16" fill="#FFFFFF" stroke="#4F46E5" stroke-width="2.5"/>
+
+  <!-- three apps -->
+  <g>
+    <rect x="176" y="130" width="150" height="90" rx="10" fill="#EEF2FF" stroke="#818CF8" stroke-width="1.5"/>
+    <text x="251" y="168" text-anchor="middle" font-size="17" font-weight="700" fill="#4338CA">App A</text>
+    <text x="251" y="192" text-anchor="middle" font-size="12" fill="#64748B">Alex's service</text>
+  </g>
+  <g>
+    <rect x="335" y="130" width="150" height="90" rx="10" fill="#EEF2FF" stroke="#818CF8" stroke-width="1.5"/>
+    <text x="410" y="168" text-anchor="middle" font-size="17" font-weight="700" fill="#4338CA">App B</text>
+    <text x="410" y="192" text-anchor="middle" font-size="12" fill="#64748B">Bella's service</text>
+  </g>
+  <g>
+    <rect x="494" y="130" width="150" height="90" rx="10" fill="#EEF2FF" stroke="#818CF8" stroke-width="1.5"/>
+    <text x="569" y="168" text-anchor="middle" font-size="17" font-weight="700" fill="#4338CA">App C</text>
+    <text x="569" y="192" text-anchor="middle" font-size="12" fill="#64748B">Chris's service</text>
+  </g>
+
+  <!-- shared OS -->
+  <rect x="176" y="235" width="468" height="55" rx="10" fill="#C7D2FE"/>
+  <text x="410" y="269" text-anchor="middle" font-size="16" font-weight="700" fill="#312E81">Shared Operating System</text>
+
+  <!-- shared hardware -->
+  <rect x="176" y="305" width="468" height="80" rx="10" fill="#4F46E5"/>
+  <text x="410" y="337" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">Shared Hardware</text>
+  <text x="410" y="362" text-anchor="middle" font-size="13" fill="#C7D2FE">CPU  ·  RAM  ·  Storage  ·  Network</text>
+
+  <text x="410" y="398" text-anchor="middle" font-size="13" font-weight="600" fill="#4338CA">One Physical Server</text>
+
+  <!-- warning -->
+  <rect x="150" y="430" width="520" height="46" rx="10" fill="#FEF2F2" stroke="#F87171" stroke-width="1.5"/>
+  <circle cx="182" cy="453" r="12" fill="#EF4444"/>
+  <text x="182" y="458" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">!</text>
+  <text x="205" y="458" font-size="14" font-weight="600" fill="#B91C1C">Low isolation: if one app or the machine fails, EVERYONE is affected.</text>
+</svg>
