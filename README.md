@@ -16,7 +16,7 @@ DevOps শেখার পথে আমার নিজের নোট, কম�
 | 04 | [VPC mern deployment](./04-vpc-mern-deploy/) | vpc deployment, mern |
 | 05 | [Python](./05-python/) | python, var, data types, programming |
 | 06 | [Cloud Engineering](./06-cloud-engineering/) | aws, server, cloud |
-| 04 | [Docker](./04-docker/) | image, container, Dockerfile, Compose |
+| 07 | [Docker](./07-docker/) | image, container, Dockerfile, Compose |
 | 05 | [Kubernetes](./05-kubernetes/) | Pod, Deployment, Service, Helm |
 | 06 | [CI/CD](./06-ci-cd/) | Jenkins, GitHub Actions, pipeline |
 | 07 | [IaC](./07-iac/) | Terraform, Ansible |
