@@ -17,8 +17,8 @@ DevOps শেখার পথে আমার নিজের নোট, কম�
 | 05 | [Python](./05-python/) | python, var, data types, programming |
 | 06 | [Cloud Engineering](./06-cloud-engineering/) | aws, server, cloud |
 | 07 | [Docker](./07-docker/) | image, container, Dockerfile, Compose |
-| 08 | [AI Ops](./08-ai/) | image, container, Dockerfile, Compose |
-| 05 | [Kubernetes](./08-agentic-ai-in-devops/) | agentic ai, load balancing, ai-ops |
+| 08 | [AI Ops](./08-agentic-ai-in-devops/) | agentic ai, load balancing, ai-ops |
+| 09 | [Kubernetes](./09-kubernetes/) | Pod, Deployment, Service, Helm |
 | 06 | [CI/CD](./06-ci-cd/) | Jenkins, GitHub Actions, pipeline |
 | 07 | [IaC](./07-iac/) | Terraform, Ansible |
 | 08 | [Cloud](./08-cloud/) | AWS-এর সার্ভিস ও হাতে-কলমে কাজ |
