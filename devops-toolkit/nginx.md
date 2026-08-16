@@ -1273,4 +1273,23 @@ sudo certbot renew --dry-run
 # ---------- DNS check ----------
 dig +short domain.com
 curl -I https://domain.com
+
+# ---------- Symlink ----------
+ls -l /etc/nginx/sites-enabled/     # symlink গুলো দেখাবে
+sudo nginx -T | grep server_name    # চালু থাকা সব server_name একসাথে দেখায়
+
+## symlink পদ্ধতির command
+# ১. আসল config ফাইল লেখা
+sudo nano /etc/nginx/sites-available/devsskills.com
+# ২. symlink বানিয়ে site চালু করা
+sudo ln -s /etc/nginx/sites-available/devsskills.com /etc/nginx/sites-enabled/
+# ৩. test করা (reload-এর আগে বাধ্যতামূলক)
+sudo nginx -t
+# ৪. reload
+sudo systemctl reload nginx
+
+# site সাময়িকভাবে বন্ধ করতে 
+sudo unlink /etc/nginx/sites-enabled/devsskills.com
+sudo nginx -t
+sudo systemctl reload nginx
 ```
