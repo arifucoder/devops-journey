@@ -1292,4 +1292,21 @@ sudo systemctl reload nginx
 sudo unlink /etc/nginx/sites-enabled/devsskills.com
 sudo nginx -t
 sudo systemctl reload nginx
+
+## Debugging
+# ১. symlink ভাঙা কিনা
+ls -l /etc/nginx/sites-enabled/
+
+# ২. আপনার ফাইল আসলেই load হচ্ছে কিনা
+sudo nginx -T | grep "configuration file"
+
+# ৩. কোন server_name গুলো active
+sudo nginx -T | grep server_name
+
+# ৪. আসল error
+sudo tail -30 /var/log/nginx/error.log
+
+# ৫. সরাসরি server-এর ভেতর থেকে test (network/firewall বাদ দিয়ে)
+curl -I http://127.0.0.1
 ```
+
