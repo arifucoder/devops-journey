@@ -1308,5 +1308,14 @@ sudo tail -30 /var/log/nginx/error.log
 
 # ৫. সরাসরি server-এর ভেতর থেকে test (network/firewall বাদ দিয়ে)
 curl -I http://127.0.0.1
+
+# 6. config-এ root কী লেখা আছে
+sudo nginx -T | grep -E "root|index|listen"
+
+# 7. ওই folder-এ আসলে কী আছে
+ls -la /var/www/teahouse/
+
+# 8. index.html কোথায় আছে খুঁজে বের করুন
+sudo find /var/www -name "index.html"
 ```
 
