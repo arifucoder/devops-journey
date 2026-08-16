@@ -36,8 +36,6 @@
 
 **SSH = Secure Shell.** এটি একটি network protocol যার মাধ্যমে দূরের (remote) কোনো server-এ **encrypted ভাবে** connect করে command line access পাওয়া যায়।
 
-<img width="741" height="430" alt="SSH diagram" src="https://gist.github.com/user-attachments/assets/3b296774-8459-489a-9416-d5b21d857712" />
-
 **Definition:** SSH হলো client ও server-এর মধ্যে একটি নিরাপদ, encrypted tunnel, যেখানে data plain text-এ যায় না — ফলে মাঝপথে কেউ পড়তে পারে না।
 
 **Example 1 —** AWS EC2 instance-এ key file দিয়ে login:
