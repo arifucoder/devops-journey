@@ -1,6 +1,6 @@
 # Contabo VPS-এ SSH Key দিয়ে Login Setup
 
-এই গাইডে দেখানো হয়েছে কীভাবে আলাদা একটি folder-এ SSH key বানিয়ে, সেটা VPS-এ যুক্ত করে, আর `ssh config` দিয়ে শুধু `ssh contabo` লিখেই VPS-এ login করা যায়।
+এই গাইডে দেখানো হয়েছে কীভাবে আলাদা একটি folder-এ SSH key বানিয়ে, সেটা VPS-এ যুক্ত করে, আর `ssh config` দিয়ে শুধু `ssh contabo` লিখেই VPS-এ login করা যায়। এটা ম্যাক পিসি থেকে লগইন করা হয়েছে। 
 
 ---
 
