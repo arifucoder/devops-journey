@@ -159,6 +159,22 @@ server {
 }
 ```
 
+```nginx
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name arifucoder.com www.arifucoder.com;
+
+    root /var/www/arifucoder.com;
+    index index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+```
+
 ### ধাপ ৩ — Website-এর ফাইল রাখা
 
 ```bash
