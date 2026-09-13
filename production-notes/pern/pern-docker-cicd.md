@@ -35,7 +35,7 @@ dist
 npm-debug.log
 ```
 
-> **⚠️ গুরুত্বপূর্ণ:** `.env` ফাইল কখনোই git এ push হবে না (এতে পাসওয়ার্ড/সিক্রেট থাকে)। VPS এ এই ফাইলগুলো আলাদাভাবে `scp` দিয়ে পাঠাতে হবে।
+> **⚠️ গুরুত্বপূর্ণ:** `.env` ফাইল কখনোই git এ push হবে না (এতে পাসওয়ার্ড/সিক্রেট থাকে)। VPS এ এই ফাইলগুলো আলাদাভাবে `scp` দিয়ে পাঠাতে হবে। 
 
 ---
 
@@ -119,6 +119,36 @@ server {
     }
 }
 ```
+
+---
+
+## ⚠️ ধাপ ৪.১: `.dockerignore` যোগ করা (গুরুত্বপূর্ণ — মিস করা যাবে না!)
+
+**`.dockerignore` ছাড়া Docker build করলে মারাত্মক সমস্যা হতে পারে।** `Dockerfile` এ `COPY . .` লেখার সময় Docker ডিফল্টভাবে সেই ফোল্ডারের **সব ফাইল** build context এ পাঠিয়ে দেয় — এমনকি `.gitignore` এ থাকা ফাইলগুলোও (`.gitignore` শুধু **git**-কে বলে কী push করতে হবে না, **Docker**-কে কিছু বলে না)।
+
+**`.dockerignore` না থাকলে যা যা ঘটতে পারে:**
+
+- লোকাল `node_modules` পুরোটা image এর ভেতরে কপি হয়ে যাবে (Alpine/Linux এর জন্য build করা native binary না, তাই container ভেতরে crash করতে পারে) এবং build অনেক ধীর ও image size অনেক বড় হয়ে যাবে
+- `.env` ফাইলের ভেতরের **DB password, JWT secret, API key** সব image layer এর ভেতরে বেক হয়ে যাবে — image push/share করলে সিক্রেট leak হয়ে যাবে
+- `.git` ফোল্ডার (পুরো commit history) image এর ভেতরে ঢুকে যাবে
+- `dist`/`build` এর পুরনো লোকাল কপি নতুন build কে override করে ফেলতে পারে
+
+**তাই `client/`, `server/`, এবং root — প্রতিটাতেই আলাদা `.dockerignore` রাখতে হবে**, ঠিক `.gitignore` এর মতোই:
+
+```dockerignore
+# client/.dockerignore এবং server/.dockerignore — এ common entries
+node_modules
+dist
+.git
+.env
+.env.local
+npm-debug.log
+Dockerfile
+docker-compose.yml
+.dockerignore
+```
+
+> **নোট:** `.dockerignore` ফাইলটা অবশ্যই সেই Dockerfile যেখানে আছে সেই ফোল্ডারেই (অর্থাৎ `client/.dockerignore` এবং `server/.dockerignore`) রাখতে হবে — root এ একটা রাখলেই client/server এর build context কভার হবে না, কারণ `docker-compose.yml` এ প্রতিটা সার্ভিসের `context` আলাদা (`./client`, `./server`)।
 
 ### docker-compose.yml (root এ)
 
@@ -342,6 +372,7 @@ docker compose exec server npx prisma migrate deploy
 | `datasource.url required` | Prisma config ফাইলের নাম ভুল/কপি হয়নি | ফাইল রিনেম + Dockerfile এ কপি করা নিশ্চিত করো |
 | Browser এ `localhost:5000` এ request যাচ্ছে | root `.env` এ `VITE_API_BASE` নেই, তাই ডিফল্ট মান বসে গেছে | root `.env` এ সঠিক মান যোগ করে `--no-cache` দিয়ে client rebuild করো |
 | SSH handshake fail: passphrase protected | Key জেনারেট করার সময় passphrase বসে গেছে | `-N ""` দিয়ে passphrase ছাড়া নতুন key বানাও |
+| Build অনেক ধীর, image size বিশাল | `.dockerignore` নেই — পুরো `node_modules`/`.git` কপি হয়ে যাচ্ছে | client/server ফোল্ডারে `.dockerignore` যোগ করে `--no-cache` দিয়ে rebuild করো |
 
 ---
 
@@ -441,7 +472,7 @@ jobs:
 1. Project structure বানাও (client + server)
 2. `git init` + `.gitignore` (তিন জায়গায়)
 3. server আগে বানাও, তারপর client
-4. দুইটা লোকালি আলাদাভাবে ভালোভাবে চললে Dockerfile + docker-compose লেখো
+4. দুইটা লোকালি আলাদাভাবে ভালোভাবে চললে Dockerfile + `.dockerignore` + docker-compose লেখো
 5. লোকালি `docker compose up --build` দিয়ে টেস্ট করো, GitHub এ push করো
 6. VPS এ Docker + nginx ইনস্টল করো
 7. Repo clone করো, `.env` ফাইল scp করো
